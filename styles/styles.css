@@ -110,6 +110,12 @@ section{
     align-items: center;
     margin: .5rem;
     box-shadow: 0 1px 9px gray;
+    transition: all .5s ease-in-out;
+    &:hover{
+        box-shadow: 0 2px 11px gray;
+        background-color: rgb(45, 54, 69);
+        
+    }
 }
 
 i{
@@ -190,12 +196,15 @@ i{
     
 }
 /*home page*/
+.btn-container{
+    display: flex;
+    align-self: flex-start;
+}
 .down-btn{
     border-radius: 20px;
-    align-self: flex-start;
     color: inherit;
     position: relative;
-    border: 1.5px solid var(--color-secondary);
+    border: 1px solid var(--color-secondary);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -309,5 +318,58 @@ i{
 
         }
 
+    }
+}
+
+.about-skills{
+    padding-bottom: 3rem;
+    .progress-bars{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+        .progress-bar{
+            display: flex;
+            flex-direction: column;
+            .progress-title{
+                text-transform: uppercase;
+                
+            }
+            .progress-container{
+                display: flex;
+                align-items: center;
+                .progress-text{
+                    color: gray;
+                }
+                .progress{
+                    width: 100%;
+                    background-color: gray;
+                    height: 1rem;
+                    border-radius: 30px;
+                    margin-left: 1rem;
+                    position: relative;
+                    span{
+                        position:absolute;
+                        border-radius: 30px;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        width: 50%;
+                    }
+                    .html{
+                        width: 70%;
+                    }
+                    .javascript{
+                        width: 90%;
+                    }
+                    .cpp{
+                        width: 65%;
+                    }
+                    .react{
+                        width: 70%;
+                    }
+                }
+            }
+        }
     }
 }
