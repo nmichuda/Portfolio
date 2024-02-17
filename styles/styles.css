@@ -515,6 +515,7 @@ i{
                 width: 100%;
                 color: var(--color-white);
                 resize: none;
+                
             }
         }
         .name-email{
@@ -522,6 +523,9 @@ i{
             :last-child{
                 margin-left: 1rem;
             }
+        }
+        ::placeholder{
+            color: var(--color-white);
         }
     }
 
