@@ -365,10 +365,16 @@ i{
                         width: 90%;
                     }
                     .cpp{
-                        width: 65%;
+                        width: 90%;
                     }
                     .react{
                         width: 70%;
+                    }
+                    .node{
+                        width: 70%;
+                    }
+                    .typescript{
+                        width: 80%;
                     }
                 }
             }
