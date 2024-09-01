@@ -397,9 +397,13 @@ i{
 
 .portfolios{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    overflow-x:scroll;
     grid-gap: 1.5rem; 
     margin-top: 3rem;
+    .col{
+        width:200px;
+      }
     .portfolio-item{
         position: relative;
         border-radius: 20px;
